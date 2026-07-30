@@ -67,4 +67,24 @@
     <string name="disable_gms">Disable Service</string>
     <string name="disable_gms_hint">Clear the current Google service environment? Google service data will be cleared.</string>
     <string name="no_gms">Currently, there is no Google service environment on mobile phones.</string>
+
+    
+    <string name="camera_setting">Camera Protection</string>
+    <string name="camera_protection">Camera Protection</string>
+    <string name="camera_protection_summary">Protect your camera privacy in virtual apps</string>
+    <string name="protect_method">Choose Protect Method</string>
+    <string name="protect_method_disable_camera">1. Disable Camera</string>
+    <string name="protect_method_local">2. Use Local Video</string>
+    <string name="protect_method_network">3. Use Network Video Stream</string>
+    <string name="protect_tip_none">Tips: Please choose a protection method.</string>
+    <string name="protect_tip_disable">Tips: This will disable the virtual camera.</string>
+    <string name="protect_tip_local">Tips: This will replace the camera data with a local video.</string>
+    <string name="protect_tip_network">Tips: This will replace the camera data with a network video.</string>
+    <string name="protect_path_hint">Input video url</string>
+    <string name="save">Save</string>
+    <string name="save_success">Save Success</string>
+    <string name="choise_video">Choose Local Video</string>
+    <string name="audio_enable">Audio Enable:</string>
+    <string name="video_not_set">Video not set</string>
+    <string name="url_should_start_http">Video url should start with http or https</string>
 </resources>

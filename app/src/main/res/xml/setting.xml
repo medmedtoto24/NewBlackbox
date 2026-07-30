@@ -7,6 +7,11 @@
     <PreferenceCategory app:title="@string/other">
 
         <Preference
+                android:key="camera_protection"
+                android:title="@string/camera_protection"
+                android:summary="@string/camera_protection_summary" />
+
+        <Preference
                 android:key="gms_manager"
                 android:title="@string/gms_manager"
                 android:summary="@string/jump_gms"/>

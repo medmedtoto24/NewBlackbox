@@ -90,7 +90,9 @@ import top.niunaijun.blackbox.utils.compat.BuildCompat;
 import top.niunaijun.blackbox.fake.service.ISettingsProviderProxy;
 import top.niunaijun.blackbox.fake.service.FeatureFlagUtilsProxy;
 import top.niunaijun.blackbox.fake.service.WorkManagerProxy;
-
+import top.niunaijun.blackbox.fake.service.CameraProxy;
+import top.niunaijun.blackbox.fake.service.CameraManagerProxy;
+import top.niunaijun.blackbox.fake.service.ICameraServiceProxy;
 
 
 public class HookManager {
@@ -133,6 +135,11 @@ public class HookManager {
             addInjector(new ISettingsProviderProxy());
             addInjector(new FeatureFlagUtilsProxy());
             addInjector(new MediaRecorderClassProxy());
+            addInjector(new CameraProxy());
+            addInjector(new CameraManagerProxy());
+            if (BuildCompat.isM()) {
+                addInjector(new ICameraServiceProxy());
+            }
             addInjector(new SQLiteDatabaseProxy());
             addInjector(new ClassLoaderProxy());
             addInjector(new FileSystemProxy());

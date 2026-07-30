@@ -14,6 +14,7 @@ class SettingFragment : PreferenceFragmentCompat() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.setting, rootKey)
 
+        initCameraProtection()
         initGms()
 
         invalidHideState {
@@ -45,6 +46,14 @@ class SettingFragment : PreferenceFragmentCompat() {
         }
 
         initSendLogs()
+    }
+
+    private fun initCameraProtection() {
+        val cameraPreference: Preference = findPreference("camera_protection")!!
+        cameraPreference.setOnPreferenceClickListener {
+            CameraSettingActivity.start(requireContext())
+            true
+        }
     }
 
     private fun initGms() {
